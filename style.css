@@ -1,6 +1,11 @@
 body {
     transition: all 1s ease;
+}
+div {
+
     height: 100vh;
+}
+.window {
 }
 .color {
     position: absolute;
