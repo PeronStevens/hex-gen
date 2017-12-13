@@ -1,0 +1,11 @@
+body {
+    transition: all 1s ease;
+    height: 100vh;
+}
+.color {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    text-align: center;
+    margin: auto;
+}
