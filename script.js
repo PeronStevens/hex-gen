@@ -6,12 +6,10 @@ window.onload = function() {
 
     }
     hexGen();
-
+    
     var el = document.querySelector('body');
     
     el.onclick = function(e) {
         hexGen();
     }
-
-
 }
