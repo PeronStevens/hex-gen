@@ -12,25 +12,33 @@
         }
         div {
             display: flex;
-            align-items: center;
-            align-content: center;
             height: 100vh;
         }
         .color {
-            position: absolute;
-            top: 50%;
-            left: 45%;
-            text-align: center;
-            margin: auto;
+            
         }
     </style>
 </head>
 <body>
-    <a class="window" href="">
-        <div>
-            <p class="color"></p>
-        </div>
-    </a>
-    <script src="script.js" ></script>
+    <div>
+        <p class="color"></p>
+    </div>
+    <script>
+        window.onload = function() {
+            function hexGen() {
+                var hex = '#' + Math.random().toString(16).slice(2,8);    
+                document.body.style.background = hex;
+                document.getElementsByClassName('color')[0].innerHTML = hex;
+
+            }
+            hexGen();
+            
+            var el = document.querySelector('body');
+            
+            el.onclick = function(e) {
+                hexGen();
+            }
+        }
+    </script>
 </body>
 </html>
